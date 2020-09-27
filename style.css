@@ -1,0 +1,182 @@
+/* html, body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+} */
+
+body {
+  background-color: #cfcfcf;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.font-size-big {
+  font-size: 40px;
+}
+
+.btn {
+  cursor: pointer;
+}
+
+
+/* #wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} */
+
+.clicked {
+  color: #7f8c8d;
+}
+
+.js-clock h1 {
+  font-size: 80px;
+}
+
+.js-form {
+  margin-bottom: 30px;
+}
+
+.js-form input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  outline: none;
+}
+
+.js-form input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.js-toDoForm input {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 40px;
+  outline: none;
+}
+
+.js-toDoForm input::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form,
+.greetings {
+  display: none;
+}
+
+.done_btn{
+  width: 60px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.8);
+  color:rgba(0,0,0,0.5);
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+
+.del_btn{
+  width: 50px;
+  height: 30px;
+  border-radius: 30px;
+  background: rgba(255,255,255,0.8);
+  border:none;
+  outline: none;
+  cursor: pointer;
+}
+ul{
+  padding: 0;
+  list-style: none;
+}
+ul li{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+}
+.js-weather {
+  font-size: 30px;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.bgImage2 {
+  display: inline-block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.bgImage3 {
+  display: inline-block;
+  position: absolute;
+  top: 200%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+
+@media screen and (max-width: 600px) {
+  .js-form input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  }
+
+  .js-form input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .js-toDoForm input {
+    background: none;
+    border: none;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 20px;
+  }
+
+  .js-toDoForm input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  .font-size-big {
+    font-size: 20px;
+  }
+}
