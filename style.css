@@ -1,26 +1,36 @@
-/* html, body{
+html,
+body {
   width: 100%;
   height: 100%;
   margin: 0;
-  position: absolute;
-  left: 0;
-  top: 0;
-} */
+  position: relative;
+}
+
+*{
+  font-family: 'Nanum Gothic', sans-serif;
+}
 
 body {
   background-color: #cfcfcf;
+  margin: 0;
   text-align: center;
   color: rgba(255, 255, 255, 0.8);
 }
 
 .font-size-big {
-  font-size: 40px;
+  font-size: 2em;
 }
 
 .btn {
   cursor: pointer;
 }
 
+.page1 {
+  width: 100%;
+  height: 100%;
+  /* padding-top: 100px; */
+  /* padding: 100px; */
+}
 
 /* #wrap {
   height: 100%;
@@ -34,6 +44,8 @@ body {
 }
 
 .js-clock h1 {
+  margin-top: 0;
+  padding-top: 100px;
   font-size: 80px;
 }
 
@@ -72,36 +84,39 @@ body {
   display: none;
 }
 
-.done_btn{
+.done_btn {
   width: 60px;
   height: 30px;
   border-radius: 30px;
-  background: rgba(255,255,255,0.8);
-  color:rgba(0,0,0,0.5);
-  border:none;
+  background: rgba(255, 255, 255, 0.8);
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
   outline: none;
   cursor: pointer;
 }
 
-.del_btn{
+.del_btn {
   width: 50px;
   height: 30px;
   border-radius: 30px;
-  background: rgba(255,255,255,0.8);
-  border:none;
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
   outline: none;
   cursor: pointer;
 }
-ul{
+
+ul {
   padding: 0;
   list-style: none;
 }
-ul li{
-  display:flex;
+
+ul li {
+  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
 }
+
 .js-weather {
   font-size: 30px;
 }
@@ -130,26 +145,66 @@ ul li{
   z-index: -1;
   animation: fadeIn 0.5s linear;
 }
-.bgImage2 {
-  display: inline-block;
-  position: absolute;
-  top: 100%;
-  left: 0;
+
+/*2페이지*/
+.page2 {
   width: 100%;
   height: 100%;
-  z-index: -1;
-  animation: fadeIn 0.5s linear;
+  padding-top: 30px;
+  background: #005AA7;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #FFFDE4, #005AA7);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #FFFDE4, #005AA7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position: relative;
+  z-index: -100;
 }
-.bgImage3 {
-  display: inline-block;
+
+.owl-carousel{
+  margin: 0 auto;
+}
+
+.owl-prev, .owl-next{
+  outline: none;
+}
+
+.owl-prev span:hover, .owl-next span:hover{
+  color:black;
+  font-size: 35px;
+  transition: 0.3s all ease-in-out;
+}
+
+.owl-prev span, .owl-next span{
+  height: 30px;
+  font-size: 30px;
+  margin: 0 20px;
+  outline: none;
+}
+
+.owl-carousel .item img{
+  width: 200px;
+  height: 200px;
+}
+
+.item{
+  position: relative;
+}
+
+.item_text_box{
+  width: 100px;
+  height: 90px;
+  line-height: 90px;
+  color:red;
+  font-size: 25px;
+  font-weight: bold;
+  background: rgba(255,255,255,0.5);
+  border-radius: 20px;
   position: absolute;
-  top: 200%;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  animation: fadeIn 0.5s linear;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+
 }
+
 
 @media screen and (max-width: 600px) {
   .js-form input {

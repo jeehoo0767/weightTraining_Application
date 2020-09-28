@@ -1,4 +1,5 @@
 const body = document.querySelector("body");
+const page1 = document.querySelector(".page1");
 
 const IMG_NUMBER = 5;
 

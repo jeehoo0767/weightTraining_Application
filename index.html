@@ -5,11 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <title>크롬 웹서비스</title>
+    <link rel="stylesheet" href="owl/owl.carousel.css">
+    <link rel="stylesheet" href="owl/owl.carousel.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="owl/owl.carousel.min.js"></script>
+    <script src="owl/prism.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap" rel="stylesheet">
+    <!-- <script type="text/javascript" src="http://code.jquery.com/jquery-1.12.4.min.js"></script> -->
+    <title>MUSCLE.GG</title>
 </head>
 
 <body>
+    <!-- 1페이지 이름 입력하면 인사와 함께 홈페이지 소개-->
+    <div class="page1">
         <div class="js-clock">
             <h1>00:00</h1>
         </div>
@@ -17,20 +25,54 @@
             <input type="text" placeholder="What is your name?" />
         </form>
         <h4 class="js-greetings greetings"></h4>
-        <form class="js-toDoForm">
+        <!-- <form class="js-toDoForm">
             <input type="text" placeholder="Write a to do" />
-        </form>
-        <ul class="js-toDoList">
+        </form> -->
+        <!-- <ul class="js-toDoList">
         </ul>
         <ul class="done">
-        </ul>
+        </ul> -->
         <span class="js-weather"></span>
+    </div>
+    <!-- 1페이지 끝-->
 
+    <!-- 2페이지 운동정보를 담은 이미지들 캐러셀 슬라이드 -->
+    <div class="page2">
+        <div class="owl-carousel owl-theme">
+                <div class="item"><img src="carousel/chest.jpg" alt="가슴"><span class="item_text_box">가슴</span></div>
+                <div class="item"><img src="carousel/back.jpg" alt="등"><span class="item_text_box">등</span></div>
+                <div class="item"><img src="carousel/shoulder.jpg" alt="어깨"><span class="item_text_box">어깨</span></div>
+                <div class="item"><img src="carousel/frontarm.jpg" alt="이두"><span class="item_text_box">이두</span></div>
+                <div class="item"><img src="carousel/backarm.jpg" alt="삼두"><span class="item_text_box">삼두</span></div>
+                <div class="item"><img src="carousel/leg.jpg" alt="하체"><span class="item_text_box">하체</span></div>
+        </div>
+    </div>
+    <!--2페이지 끝-->
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>
     <script src="background.js"></script>
     <script src="weather.js"></script>
+    <script>
+        $(document).ready(function () {
+                    $('.owl-carousel').owlCarousel({
+                        loop: true,
+                        margin: 20,
+                        nav: true,
+                        responsive: {
+                            0: {
+                                items: 1
+                            },
+                            600: {
+                                items: 3
+                            },
+                            1000: {
+                                items: 5
+                            }
+                        }
+                    })
+                });
+    </script>
 </body>
 
 </html>

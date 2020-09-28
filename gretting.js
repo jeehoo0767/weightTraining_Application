@@ -24,7 +24,9 @@ function askForName() {
 function paintGreeting(text) {
     form.classList.remove(SHOWING_CN);
     greeting.classList.add(SHOWING_CN);
-    greeting.innerText = `Hello ${text}`;
+    greeting.innerHTML = `안녕하세요 ${text}님 본 웹사이트는<br> 웨이트 트레이닝을 위한
+    정보와 <br>트레이닝 스케쥴 관리를 위한 사이트 입니다.<br>
+    아래로 내려 가시면 많은 컨텐츠를<br> 이용 하실 수 있습니다.`;
     greeting.classList.add("font-size-big");
 }
 
