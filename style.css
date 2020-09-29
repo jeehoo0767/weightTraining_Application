@@ -34,11 +34,16 @@ margin: 0;
   position: relative;
 }
 
-.main_img img{
-  width: 300px;
-  height: 300px;
+.logo{
+  position: absolute;
+  left: 20px;
+  top: 20px;
 }
 
+.logo img{
+  width: 100px;
+  height: 100px;
+}
 
 
 .logo_text_box{
@@ -73,6 +78,7 @@ margin: 0;
 }
 
 .page1 {
+  padding-top: 100px;
   width: 100%;
   /* padding-top: 100px; */
   /* padding: 100px; */
@@ -173,9 +179,9 @@ ul li {
 .js-weather {
   font-size: 30px;
   position: absolute;
-  top: 0;
+  top: 20px;
   right: 20px;
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .showing {
