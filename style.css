@@ -57,6 +57,7 @@ margin: 0;
 }
 .video{
   position: relative;
+  margin-bottom: 30px;
 }
 
 .flex_box{
@@ -158,6 +159,7 @@ margin: 0;
   color:#be3159;
   font-size: 20px;
   outline: none;
+  text-align: center;
 }
 
 .js-toDoForm input::placeholder {
