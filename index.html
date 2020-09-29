@@ -19,23 +19,19 @@
 <body>
     <!-- 1페이지 이름 입력하면 인사와 함께 홈페이지 소개-->
     <div class="page1">
-        <div class="js-clock">
+        <div class="logo"><img src="images/logo.png" alt="logo"></div>
+        <!-- <div class="js-clock">
             <h1>00:00</h1>
-        </div>
+        </div> -->
         <!-- <div class="main_img"><img src="images/ronie.png" alt="로니"><span class="logo_text_box">Light Weight Baby!!</span></div> -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/k8fodIR_mgg" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/k8fodIR_mgg" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         <form class="js-form form">
             <input type="text" placeholder="What is your name?" />
         </form>
         <h4 class="js-greetings greetings"></h4>
         <button id="eng_btn" class="w3-button w3-red">번역</button>
-        <!-- <form class="js-toDoForm">
-            <input type="text" placeholder="Write a to do" />
-        </form> -->
-        <!-- <ul class="js-toDoList">
-        </ul>
-        <ul class="done">
-        </ul> -->
         <span class="js-weather"></span>
     </div>
     <div class="linelineline">
@@ -56,7 +52,10 @@
         </div>
     </div>
     <!--2페이지 끝-->
-
+    <div class="linelineline">
+        <h3>TODO</h3>
+        <hr>
+    </div>
     <!--3페이지 스톱워치와 todo리스트-->
     <div class="wrapper">
         <h1>Stopwatch</h1>
@@ -66,6 +65,17 @@
         <button id="button-stop">Stop</button>
         <button id="button-reset">Reset</button>
     </div>
+    <form class="js-toDoForm">
+        <input type="text" placeholder="Write a to do" />
+    </form>
+    <div class="todo_flex_box">
+        <ul class="js-toDoList">
+            <h4>오늘 할 운동</h4>
+        </ul>
+        <ul class="done">
+            <h4>완료목록</h4>
+        </ul>
+    </div>
     <script src="clock.js"></script>
     <script src="gretting.js"></script>
     <script src="todo.js"></script>
@@ -73,7 +83,7 @@
     <script src="weather.js"></script>
     <script src="stopWatch.js"></script>
     <script>
-        $("#eng_btn").click(function(event){
+        $("#eng_btn").click(function (event) {
             $(".hangule_box").removeClass("show");
             $(".hangule_box").addClass("hide");
             $(".eng_box").removeClass("hide");

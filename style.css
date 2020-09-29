@@ -119,16 +119,17 @@ margin: 0;
 }
 
 .js-toDoForm input {
+  margin-top: 20px;
+  padding: 10px;
   background: none;
-  border: none;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 40px;
+  border: 1px solid #be3159;
+  color:#be3159;
+  font-size: 20px;
   outline: none;
 }
 
 .js-toDoForm input::placeholder {
-  color: rgba(255, 255, 255, 0.8);
+  color:#be3159;
 }
 
 .form,
@@ -136,37 +137,37 @@ margin: 0;
   display: none;
 }
 
-.done_btn {
-  width: 60px;
-  height: 30px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.8);
-  color: rgba(0, 0, 0, 0.5);
-  border: none;
-  outline: none;
-  cursor: pointer;
+.done_btn, .del_btn{
+  background: none;
+  border:none;
+  outline:none;
 }
 
-.del_btn {
-  width: 50px;
-  height: 30px;
-  border-radius: 30px;
-  background: rgba(255, 255, 255, 0.8);
-  border: none;
-  outline: none;
-  cursor: pointer;
+.todo_flex_box{
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
 
 ul {
+  margin: 20px 20px;
   padding: 0;
   list-style: none;
+  width: 500px;
+  height: 500px;
+  border: 1px solid #000;
+  text-align: center;
 }
 
 ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 30px;
+  font-size: 16px;
+  background:#952d5d;
+  width: 200px;
+  margin: 5px auto;
+  color:white;
 }
 
 .js-weather {
@@ -300,6 +301,10 @@ ul li {
   transition: 1s all ease-in-out;
 }
 
+
+.wrapper p span{
+  font-size: 25px;
+}
 @media screen and (max-width: 600px) {
   .js-form input {
     background: none;

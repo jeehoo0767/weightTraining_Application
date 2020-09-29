@@ -48,7 +48,7 @@ function paintDone(text) {
     const doneBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = doneTodo.length + 1;
-    doneBtn.innerText = "DONE";
+    doneBtn.innerText = "✔";
     span.innerText = text;
     li.appendChild(doneBtn);
     doneBtn.classList.add("done_btn");
@@ -101,8 +101,8 @@ function paintToDo(text) {
     const doneBtn = document.createElement("button");
     const span = document.createElement("span");
     const newId = toDos.length + 1;
-    doneBtn.innerText = "DONE";
-    delBtn.innerText = "❌";
+    doneBtn.innerText = "✔";
+    delBtn.innerText = "✖";
     delBtn.addEventListener("click", deleteToDo);
     doneBtn.addEventListener("click", plusDone);
     span.innerText = text;
