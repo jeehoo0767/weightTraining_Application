@@ -29,6 +29,7 @@ margin: 0;
 }
 
 .header{
+  width: 100%;
   padding: 20px;
   background: #f4f4f4;
   
@@ -417,14 +418,17 @@ ul li {
   }
 
   .video{
+    width: 100%;
     margin: 0 auto;
     margin-top: 50px;
     position: relative;
     margin-bottom: 30px;
+    dispaly:flex;
+    flex-wrap: wrap;
   }
   
   .video iframe{
-    width: 500px;
+    width: 50%;
     height: 300px;
     position: relative;
     z-index: 99;
