@@ -28,7 +28,7 @@ function paintGreeting(text) {
     정보와 <br>트레이닝 스케쥴 관리를 위한 사이트 입니다.<br>
     아래로 내려 가시면 많은 컨텐츠를<br> 이용 하실 수 있습니다.</div>
     <div class="eng_box hide">Hello, ${text} This website is for weight training.<br>
-    This website contains information for weight training<br> and training schedule management.<br> If you go down, you can use a lot of contents.<div>
+    This website contains information for weight training and training schedule management.<br> If you go down, you can use a lot of contents.<div>
     </div>`;
     greeting.classList.add("font-size-big");
 }

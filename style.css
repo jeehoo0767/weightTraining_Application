@@ -8,6 +8,7 @@ body {
 
 *{
   font-family: 'Nanum Gothic', sans-serif;
+  text-decoration: none;
 }
 
 .show{
@@ -116,6 +117,8 @@ margin: 0;
 
 .page1 {
   width: 100%;
+  height: 520px;
+  /* background: #2c2c2c; */
   /* padding-top: 100px; */
   /* padding: 100px; */
   margin-bottom: 20px;
@@ -144,6 +147,7 @@ margin: 0;
 }
 
 .js-form {
+  text-align: center;
   margin-bottom: 30px;
 }
 
@@ -158,6 +162,10 @@ margin: 0;
 
 .js-form input::placeholder {
   color:#be3159;
+}
+
+.js-toDoForm{
+  text-align: center;
 }
 
 .js-toDoForm input {
@@ -353,9 +361,31 @@ ul li {
   transition: 1s all ease-in-out;
 }
 
+.footer{
+  height: 150px;
+  background: #f4f4f4;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wrapper{
+  text-align: center;
+}
 
 .wrapper p span{
   font-size: 25px;
+}
+
+.footer_logo img{
+  -webkit-filter:grayscale(100%);
+  width: 100px;
+  height: 100px;
+}
+
+.sns_area img{
+  width: 50px;
+  height: 50px;
 }
 @media screen and (max-width: 600px) {
   .js-form input {
