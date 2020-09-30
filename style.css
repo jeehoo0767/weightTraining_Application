@@ -24,43 +24,49 @@ background: -webkit-linear-gradient(to right, #E2E2E2, #C9D6FF);
 background: linear-gradient(to right, #E2E2E2, #C9D6FF);  */
 background: #fff;  
 margin: 0;
-  text-align: center;
   color:#be3159;
 }
 
 .header{
   padding: 20px;
-  text-align: justify;
+  background: #f4f4f4;
+  
 }
 
+
+
 .logo{
-  /* position: absolute;
-  left: 20px;
-  top: 20px; */
+  display:flex;
+  align-items: center;
+}
+
+.logo span{
+  display: inline-block;
+  font-size: 40px;
+  margin-left: 10px;
 }
 
 .logo img{
-  width: 100px;
-  height: 100px;
+  width: 70px;
+  height: 70px;
 }
 
 .video{
-  width: 560px;
-  height: 320px;
   margin: 0 auto;
   margin-top: 50px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-bottom: 30px;
 }
 
 .video iframe{
   width: 560px;
   height: 315px;
+  margin-left: 50px;
   position: relative;
   z-index: 99;
-}
-
-.video{
-  position: relative;
-  margin-bottom: 30px;
 }
 
 .flex_box{
@@ -171,7 +177,10 @@ margin: 0;
 
 .form,
 .greetings {
+  width: 560px;
+  height: 220px;
   display: none;
+  font-size: 25px;
 }
 
 .done_btn, .del_btn{
@@ -286,6 +295,7 @@ ul li {
 }
 
 .owl-carousel{
+  text-align: center;
   margin: 0 auto;
 }
 
@@ -322,6 +332,7 @@ ul li {
   height: 90px;
   line-height: 90px;
   color:red;
+  text-align: center;
   font-size: 25px;
   font-weight: bold;
   background: rgba(255,255,255,0.5);
@@ -376,10 +387,10 @@ ul li {
   }
 
   .video{
-    width: 560px;
-    height: 320px;
     margin: 0 auto;
     margin-top: 50px;
+    position: relative;
+    margin-bottom: 30px;
   }
   
   .video iframe{
@@ -387,10 +398,6 @@ ul li {
     height: 300px;
     position: relative;
     z-index: 99;
-  }
-  .video{
-    position: relative;
-    margin-bottom: 30px;
   }
   
   .flex_box{
