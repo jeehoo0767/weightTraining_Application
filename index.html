@@ -28,14 +28,13 @@
         <!-- <div class="js-clock">
             <h1>00:00</h1>
         </div> -->
-        <!-- <div class="main_img"><img src="images/ronie.png" alt="로니"><span class="logo_text_box">Light Weight Baby!!</span></div> -->
         <div class="video">
             <div class="greeting_Area">
                 <form class="js-form form">
                     <input type="text" placeholder="What is your name?" />
                 </form>
                 <h4 class="js-greetings greetings"></h4>
-                <button id="eng_btn" class="w3-button w3-red">번역</button>
+                <button id="eng_btn">Translation ></button>
             </div>
             <div class="iframe_area">
                 <iframe src="https://www.youtube.com/embed/k8fodIR_mgg" frameborder="0"
@@ -43,28 +42,38 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-    <div class="linelineline">
+    <!-- <div class="linelineline">
         <h3>INFO</h3>
         <hr>
-    </div>
+    </div> -->
     <!-- 1페이지 끝-->
 
     <!-- 2페이지 운동정보를 담은 이미지들 캐러셀 슬라이드 -->
     <div class="page2">
-        <div class="owl-carousel owl-theme">
-            <div class="item"><img src="carousel/chest.jpg" alt="가슴"><span class="item_text_box">가슴</span></div>
-            <div class="item"><img src="carousel/back.jpg" alt="등"><span class="item_text_box">등</span></div>
-            <div class="item"><img src="carousel/shoulder.jpg" alt="어깨"><span class="item_text_box">어깨</span></div>
-            <div class="item"><img src="carousel/frontarm.jpg" alt="이두"><span class="item_text_box">이두</span></div>
-            <div class="item"><img src="carousel/backarm.jpg" alt="삼두"><span class="item_text_box">삼두</span></div>
-            <div class="item"><img src="carousel/leg.jpg" alt="하체"><span class="item_text_box">하체</span></div>
+        <h5>What kind of exercise do you want?</h5>
+        <div class="carousel_area">
+            <div class="owl-carousel owl-theme">
+                <div class="item" style="width:300px"><div class="item_container"><img src="carousel/chest.jpg" alt="가슴"><div class="item_text_area">오동고자</div></div></div>
+                <div class="item" style="width:300px"><div class="item_container"><img src="carousel/back.jpg" alt="등"><div class="item_text_area">오동고자</div></div></div>
+                <div class="item" style="width:300px"><div class="item_container"><img src="carousel/shoulder.jpg" alt="어깨"><div class="item_text_area">오동고자</div></div></div>
+                <div class="item" style="width:300px"><div class="item_container"><img src="carousel/frontarm.jpg" alt="이두"><div class="item_text_area">오동고자</div></div></div>
+                <div class="item" style="width:300px"><div class="item_container"><img src="carousel/backarm.jpg" alt="삼두"><div class="item_text_area">오동고자</div></div></div>
+                <div class="item" style="width:300px"><div class="item_container"><img src="carousel/leg.jpg" alt="하체"><div class="item_text_area">오동고자</div></div></div>
+            </div>
         </div>
     </div>
+
+    <!-- <span class="item_text_box">가슴</span>
+    <span class="item_text_box">등</span>
+    <span class="item_text_box">어깨</span>
+    <span class="item_text_box">이두</span>
+    <span class="item_text_box">삼두</span>
+    <span class="item_text_box">하체</span> -->
     <!--2페이지 끝-->
-    <div class="linelineline">
+    <!-- <div class="linelineline">
         <h3>TODO</h3>
         <hr>
-    </div>
+    </div> -->
     <!--3페이지 스톱워치와 todo리스트-->
     <div class="wrapper">
         <h1>Stopwatch</h1>
@@ -119,18 +128,19 @@
 
         $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
+                center:true,
                 loop: true,
-                margin: 20,
+                margin: 30,
                 nav: true,
                 responsive: {
                     0: {
                         items: 1
                     },
                     600: {
-                        items: 3
+                        items: 1
                     },
                     1000: {
-                        items: 5
+                        items: 3
                     }
                 }
             })
