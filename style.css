@@ -327,7 +327,7 @@ ul li {
 .owl-carousel{
   width: 48%;
   margin: 0 auto;
-  /* text-align: center;  */
+  text-align: center; 
 }
 
 .item{
@@ -338,11 +338,6 @@ ul li {
 
 .cloned{
   width: 300px;
-}
-
-.owl-stage-outer{
-  /* width: 48%; */
-  margin: 0 auto;
 }
 
 .owl-prev, .owl-next{
