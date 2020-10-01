@@ -422,6 +422,7 @@ ul li {
   }
 
   .video{
+    text-align: center;
     width: 100%;
     margin: 0 auto;
     margin-top: 50px;
@@ -429,13 +430,19 @@ ul li {
     margin-bottom: 30px;
     display:flex;
     flex-wrap: wrap-reverse;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  
+/*   
+  .iframe_area{
+    position: relative;
+  } */
+
   .video iframe{
-    width: 50%;
+    width: 500px;
     height: 300px;
     position: relative;
+    right: 10px;
     z-index: 99;
   }
   
@@ -443,15 +450,5 @@ ul li {
     margin-top: 30px;
   }
   
-  .video img{
-    width: 580px;
-    height: 360px;
-    display: inline-block;
-    position: absolute;
-    left: 50%;
-    top: 47%;
-    transform: translate(-50%, -50%);
-    /* z-index: 99; */
-  }
 
 }
