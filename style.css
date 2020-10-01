@@ -394,28 +394,45 @@ ul li {
 }
 @media screen and (max-width: 600px) {
   .js-form input {
+    margin-top: 20px;
+    padding: 10px;
     background: none;
-    border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-    color: rgba(255, 255, 255, 0.8);
+    border: 1px solid #be3159;
+    color:#be3159;
     font-size: 20px;
+    outline: none;
+    text-align: center;
   }
 
   .js-form input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+    color::#be3159;
   }
 
   .js-toDoForm input {
-    background: none;
-    border: none;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.8);
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 20px;
+    margin-top: 20px;
+  padding: 10px;
+  background: none;
+  border: 1px solid #be3159;
+  color:#be3159;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
   }
 
   .js-toDoForm input::placeholder {
-    color: rgba(255, 255, 255, 0.8);
+    color:#be3159;
   }
+
+  .item{
+    width: 300px;
+  }
+
+  .form,
+.greetings {
+  width: 360px;
+  height: 220px;
+  font-size: 25px;
+}
 
   .font-size-big {
     font-size: 20px;
@@ -439,7 +456,7 @@ ul li {
   } */
 
   .video iframe{
-    width: 500px;
+    width: 300px;
     height: 300px;
     position: relative;
     right: 10px;
