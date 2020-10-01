@@ -42,10 +42,10 @@
                     allowfullscreen></iframe>
             </div>
         </div>
-    <!-- <div class="linelineline">
+    <div class="linelineline">
         <h3>INFO</h3>
         <hr>
-    </div> -->
+    </div>
     <!-- 1페이지 끝-->
 
     <!-- 2페이지 운동정보를 담은 이미지들 캐러셀 슬라이드 -->
@@ -53,12 +53,12 @@
         <h5>What kind of exercise do you want?</h5>
         <div class="carousel_area">
             <div class="owl-carousel owl-theme">
-                <div class="item"><div class="item_container"><img src="carousel/chest.jpg" alt="가슴"><div class="item_text_area">TEXT-AREA</div></div></div>
-                <div class="item"><div class="item_container"><img src="carousel/back.jpg" alt="등"><div class="item_text_area">TEXT-AREA</div></div></div>
-                <div class="item"><div class="item_container"><img src="carousel/shoulder.jpg" alt="어깨"><div class="item_text_area">TEXT-AREA</div></div></div>
-                <div class="item"><div class="item_container"><img src="carousel/frontarm.jpg" alt="이두"><div class="item_text_area">TEXT-AREA</div></div></div>
-                <div class="item"><div class="item_container"><img src="carousel/backarm.jpg" alt="삼두"><div class="item_text_area">TEXT-AREA</div></div></div>
-                <div class="item"><div class="item_container"><img src="carousel/leg.jpg" alt="하체"><div class="item_text_area">TEXT-AREA</div></div></div>
+                <div class="item"><a href="#"><div class="item_container"><img src="carousel/chest.jpg" class="carousel_img" alt="가슴"><div class="item_text_area">TEXT-AREA</div></div></a></div>
+                <div class="item"><a href="#"><div class="item_container"><img src="carousel/back.jpg" class="carousel_img" alt="등"><div class="item_text_area">TEXT-AREA</div></div></a></div>
+                <div class="item"><a href="#"><div class="item_container"><img src="carousel/shoulder.jpg" class="carousel_img" alt="어깨"><div class="item_text_area">TEXT-AREA</div></div></a></div>
+                <div class="item"><a href="#"><div class="item_container"><img src="carousel/frontarm.jpg" class="carousel_img" alt="이두"><div class="item_text_area">TEXT-AREA</div></div></a></div>
+                <div class="item"><a href="#"><div class="item_container"><img src="carousel/backarm.jpg" class="carousel_img" alt="삼두"><div class="item_text_area">TEXT-AREA</div></div></a></div>
+                <div class="item"><a href="#"><div class="item_container"><img src="carousel/leg.jpg" class="carousel_img" alt="하체"><div class="item_text_area">TEXT-AREA</div></div></a></div>
             </div>
         </div>
     </div>
@@ -70,10 +70,10 @@
     <span class="item_text_box">삼두</span>
     <span class="item_text_box">하체</span> -->
     <!--2페이지 끝-->
-    <!-- <div class="linelineline">
+    <div class="linelineline">
         <h3>TODO</h3>
         <hr>
-    </div> -->
+    </div>
     <!--3페이지 스톱워치와 todo리스트-->
     <div class="wrapper">
         <h1>Stopwatch</h1>
@@ -119,16 +119,8 @@
     <script src="weather.js"></script>
     <script src="stopWatch.js"></script>
     <script>
-        $("#eng_btn").click(function (event) {
-            $(".hangule_box").removeClass("show");
-            $(".hangule_box").addClass("hide");
-            $(".eng_box").removeClass("hide");
-            $(".eng_box").addClass("show");
-        })
-
-        $(document).ready(function () {
+    $(document).ready(function () {
             $('.owl-carousel').owlCarousel({
-                // center:true,
                 loop: true,
                 margin: 30,
                 nav: true,
@@ -144,6 +136,22 @@
                     }
                 }
             })
+        });
+
+        $("#eng_btn").click(function (event) {
+            $(".hangule_box").removeClass("show");
+            $(".hangule_box").addClass("hide");
+            $(".eng_box").removeClass("hide");
+            $(".eng_box").addClass("show");
+        })
+
+        $(".item").mouseover(function(){
+            $(this).css({"opacity" : "0.5",
+                        "transition" : "0.3s all ease-in-out"});
+        });
+        $(".item").mouseout(function(){
+            $(this).css({"opacity" : "1",
+                        "transition" : "0.3s all ease-in-out"});
         });
     </script>
 </body>
