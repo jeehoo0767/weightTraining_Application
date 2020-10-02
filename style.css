@@ -310,8 +310,6 @@ ul li {
   /* background: #3b99e3; */
   width: 100%;
   padding-top: 30px;
-  position: relative;
-  z-index: -100;
 }
 
 .page2 h5{
