@@ -142,11 +142,11 @@
             $(".eng_box").addClass("show");
         })
 
-        $(".item, .cloned").mouseover(function(){
+        $(".item, .cloned, .item_container").mouseover(function(){
             $(this).css({"opacity" : "0.5",
                         "transition" : "0.3s all ease-in-out"});
         });
-        $(".item, .cloned").mouseout(function(){
+        $(".item, .cloned, .item_container").mouseout(function(){
             $(this).css({"opacity" : "1",
                         "transition" : "0.3s all ease-in-out"});
         });
