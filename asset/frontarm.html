@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="subStyle/frontarm.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="logo">
+            <img src="../images/logo.png" alt="logo">
+            <span>ATHLETES</span>
+        </div>
+        <span class="js-weather"></span>
+    </div>
+    <h1 style="padding:120px;margin:0px">a</h1>
+    <div class="footer">
+        <div class="footer_logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <div class="footer_location">
+            &copy;<a href="">copy</a><br>
+            &copy;<a href="">copy</a><br>
+            &copy;<a href="">copy</a><br>
+            &copy;<a href="">copy</a><br>
+            &copy;<a href="">copy</a><br>
+        </div>
+        <div class="sns_area">
+            <img src="../images/facebook.png" alt="facebook">
+            <img src="../images/instagram.png" alt="instagram">
+            <img src="../images/twitter.png" alt="twitter">
+        </div>
+    </div>
+    <script src="../script/weather.js"></script>
+    <script>
+        //scroll 감지 header
+        let didscroll;
+        let lastScrollTop = 0;
+        let delta = 5;
+        let navbarHeight = $(".header").outerHeight();
+
+        $(window).scroll(function (evnet) {
+            didscroll = true;
+        });
+
+        setInterval(function () {
+            if (didscroll) {
+                hasScrolled();
+                didscroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            let st = $(this).scrollTop();
+
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            if (st > lastScrollTop && st > navbarHeight) {
+                $(".header").removeClass("nav-down").addClass("nav-up");
+            }
+            else {
+                if (st + $(window).height() < $(document).height()) {
+                    $(".header").removeClass("nav-up").addClass("nav-down");
+                }
+            }
+            lastScrollTop = st;
+        }
+        //scroll 감지 header 끝
+    </script>
+</body>
+
+</html>
