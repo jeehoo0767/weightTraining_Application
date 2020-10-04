@@ -20,7 +20,17 @@ body {
   width: 100%;
   padding: 20px;
   background: #f4f4f4;
-  
+  position: fixed;
+  z-index: 12490;
+  transition: top 0.2s ease-in-out;
+}
+
+.nav-up {
+  top : -150px;
+}
+
+.nav-down {
+  top : 0;
 }
 
 .big_font{
@@ -50,7 +60,7 @@ body {
 
 .video{
   /* height: 900px; */
-  padding: 20px;
+  padding: 120px 20px 20px 20px;
   margin: 0 auto;
   display:flex;
   flex-wrap: wrap-reverse;
@@ -398,6 +408,7 @@ ul li {
   transition: 1s all ease-in-out;
 } */
 
+
 .footer{
   height: 150px;
   background: #f4f4f4;
@@ -435,6 +446,10 @@ ul li {
     outline: none;
     text-align: center;
   }
+
+  /* .eng_btn{
+    margin-top: 50px;
+  } */
 
   .js-form input::placeholder {
     color:#be3159;
