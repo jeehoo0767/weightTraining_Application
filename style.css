@@ -438,7 +438,8 @@ ul li {
 
 .footer{
   height: 150px;
-  background: #f4f4f4;
+  background: #212432;
+  color: #ffffff;
   display:flex;
   justify-content: space-around;
   align-items: center;
