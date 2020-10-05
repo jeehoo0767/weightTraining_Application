@@ -27,6 +27,7 @@ button{
   position: fixed;
   z-index: 12490;
   transition: top 0.2s ease-in-out;
+  display:flex;
 }
 
 .nav-up {
@@ -38,7 +39,7 @@ button{
 }
 
 .big_font{
-  font-size: 30px;
+  font-size: 33px;
 }
 
 .small_font{
@@ -46,7 +47,7 @@ button{
 }
 
 .logo{
-  width: 65%;
+  width: 1200px;
   margin: 0 auto;
   display:flex;
   align-items: center;
