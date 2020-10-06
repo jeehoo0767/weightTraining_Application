@@ -34,6 +34,7 @@ button{
   z-index: 12490;
   transition: top 0.2s ease-in-out;
   display:flex;
+  border-bottom: 1px solid #e7edef;
 }
 
 .nav-up {
