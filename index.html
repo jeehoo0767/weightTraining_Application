@@ -53,23 +53,24 @@
     <!-- 2페이지 운동정보를 담은 이미지들 캐러셀 슬라이드 -->
     <div class="page2">
         <h5>What kind of exercise do you want?</h5>
-        <div class="carousel_area">
+        <div class="carousel_area" style="max-width: 1520px; margin-left: auto; margin-right: auto; padding-top: 3%;">
             <div class="owl-carousel owl-theme">
-                <div class="item"><a href="asset/chest.html"><div class="item_container"><img src="carousel/chest.jpg" class="carousel_img" alt="가슴"><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
+                <div class="item"><a href="asset/chest.html"><div class="item_container"><div class="item_img_area"><img src="carousel/chest.jpg" class="carousel_img" alt="가슴"></div><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
                     Absolutely free.</h4></div></div></a></div>
-                <div class="item"><a href="asset/back.html"><div class="item_container"><img src="carousel/back.jpg" class="carousel_img" alt="등"><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
+                <div class="item"><a href="asset/back.html"><div class="item_container"><div class="item_img_area"><img src="carousel/back.jpg" class="carousel_img" alt="등"></div><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
                     Absolutely free.</h4></div></div></a></div>
-                <div class="item"><a href="asset/shoulder.html"><div class="item_container"><img src="carousel/shoulder.jpg" class="carousel_img" alt="어깨"><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
+                <div class="item"><a href="asset/shoulder.html"><div class="item_container"><div class="item_img_area"><img src="carousel/shoulder.jpg" class="carousel_img" alt="어깨"></div><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
                     Absolutely free.</h4></div></div></a></div>
-                <div class="item"><a href="asset/frontarm.html"><div class="item_container"><img src="carousel/frontarm.jpg" class="carousel_img" alt="이두"><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
+                <div class="item"><a href="asset/frontarm.html"><div class="item_container"><div class="item_img_area"><img src="carousel/frontarm.jpg" class="carousel_img" alt="이두"></div><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
                     Absolutely free.</h4></div></div></a></div>
-                <div class="item"><a href="asset/backarm.html"><div class="item_container"><img src="carousel/backarm.jpg" class="carousel_img" alt="삼두"><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
+                <div class="item"><a href="asset/backarm.html"><div class="item_container"><div class="item_img_area"><img src="carousel/backarm.jpg" class="carousel_img" alt="삼두"></div><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
                     Absolutely free.</h4></div></div></a></div>
-                <div class="item"><a href="asset/leg.html"><div class="item_container"><img src="carousel/leg.jpg" class="carousel_img" alt="하체"><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
+                <div class="item"><a href="asset/leg.html"><div class="item_container"><div class="item_img_area"><img src="carousel/leg.jpg" class="carousel_img" alt="하체"></div><div class="item_text_area"><h4>Workout videos for every<br> fitness level.
                     Absolutely free.</h4></div></div></a></div>
             </div>
         </div>
     </div>
+    
 
     <!-- <span class="item_text_box">가슴</span>
     <span class="item_text_box">등</span>
@@ -167,7 +168,7 @@
         //scroll 감지 header 끝
         
             $('.owl-carousel').owlCarousel({
-                loop: true,
+                // loop: true,
                 margin: 30,
                 nav: true,
                 responsive: {
