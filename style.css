@@ -27,6 +27,7 @@ button{
 
 .header{
   width: 100%;
+  font-family: 'Open Sans', sans-serif;
   padding: 20px;
   background: rgb(255,255,255);
   position: fixed;
@@ -146,6 +147,7 @@ button{
 .js-form input {
   padding: 10px;
   background: none;
+  font-weight: bold;
   border: 1px solid #be3159;
   color:#be3159;
   font-size: 20px;
@@ -154,10 +156,12 @@ button{
 
 .js-form input::placeholder {
   color:#be3159;
+  font-weight: bold;
 }
 
 .js-toDoForm{
   text-align: center;
+  font-weight: bold;
 }
 
 .js-toDoForm input {
@@ -165,6 +169,7 @@ button{
   padding: 10px;
   background: none;
   border: 1px solid #be3159;
+  font-weight: bold;
   color:#be3159;
   font-size: 20px;
   outline: none;
@@ -179,9 +184,11 @@ button{
 .greetings {
   width: 580px;
   height: 220px;
+  font-family: 'Open Sans', sans-serif;
   display: none;
   margin: 60px;
   font-size: 25px;
+  font-weight: bold;
   color: white;
 }
 
@@ -340,6 +347,7 @@ ul li {
 }
 
 .item{
+  font-family: 'Open Sans', sans-serif;
   /* border:4px solid #222533; */
   position: relative;
   overflow: hidden;
@@ -438,11 +446,20 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 }
 
 .wrapper{
+   font-family: 'Open Sans', sans-serif;
   text-align: center;
+  font-weight: bold;
 }
+
 
 .wrapper p span{
   font-size: 25px;
+  font-weight: bold;
+}
+
+.wrapper h2{
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .footer_logo img{

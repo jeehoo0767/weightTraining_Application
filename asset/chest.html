@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="subStyle/chest.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Document</title>
 </head>
@@ -19,17 +19,35 @@
         </div>
         <span class="js-weather"></span>
     </div>
-    <h1 style="padding:120px;margin:0px">a</h1>
+    <div class="main_content_box">
+        <h1>1. 벤치 프레스</h1>
+        <div class="flex_box">
+                <iframe src="https://www.youtube.com/embed/9K81DQFutm8" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            <div class="text_box">
+                <div>오동고자</div>
+                <div>오동고자</div>
+                <div>오동고자</div>
+                <div>오동고자</div>
+                <div>오동고자</div>
+            </div>
+        </div>
+        <div>오동고자</div>
+        <div>오동고자</div>
+        <div>오동고자</div>
+    </div>
+
     <div class="footer">
         <div class="footer_logo">
             <img src="../images/logo.png" alt="">
         </div>
         <div class="footer_location">
-            &copy;<a href="">copy</a><br>
-            &copy;<a href="">copy</a><br>
-            &copy;<a href="">copy</a><br>
-            &copy;<a href="">copy</a><br>
-            &copy;<a href="">copy</a><br>
+            &copy;copy<br>
+            &copy;copy<br>
+            &copy;copy<br>
+            &copy;copy<br>
+            &copy;copy<br>
         </div>
         <div class="sns_area">
             <img src="../images/facebook.png" alt="facebook">
@@ -64,8 +82,7 @@
 
             if (st > lastScrollTop && st > navbarHeight) {
                 $(".header").removeClass("nav-down").addClass("nav-up");
-            }
-            else {
+            } else {
                 if (st + $(window).height() < $(document).height()) {
                     $(".header").removeClass("nav-up").addClass("nav-down");
                 }
