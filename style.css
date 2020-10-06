@@ -36,11 +36,11 @@ button{
 }
 
 .nav-up {
-  top : -150px;
+  top : -90px;
 }
 
 .nav-down {
-  top : 0;
+  top : 0px;
 }
 
 .big_font{
@@ -330,8 +330,13 @@ ul li {
   margin: 0 auto;
   text-align: center; 
 }
+
 .owl-stage-outer{
   height: 360px;
+}
+
+.owl-dots button{
+  outline: none;
 }
 
 .item{
