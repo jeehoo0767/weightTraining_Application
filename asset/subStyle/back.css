@@ -119,7 +119,7 @@ font-weight: bold;
   display:flex;
   justify-content: space-around;
   align-items: flex-end;
-  height: 40%;
+  height: 20%;
 }
 
 .add_item{
@@ -168,7 +168,7 @@ iframe{
 
 .text_content
 {
-  height: 60%;
+  height: 80%;
   padding: 20px;
   line-height: 35px;
   font-size: 20px;
@@ -264,16 +264,13 @@ iframe{
 
   .text_content{
     font-size: 14px;
+    height: 80%;
+    font-size: 15px;
   }
 
   .add_box{
     height: 20%;
     font-size: 13px;
-  }
-
-  .text_content{
-    height: 80%;
-    font-size: 15px;
   }
 
   .js-weather{
