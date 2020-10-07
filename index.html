@@ -52,7 +52,7 @@
     <!-- 1페이지 끝-->
 
     <!-- 2페이지 운동정보를 담은 이미지들 캐러셀 슬라이드 -->
-    <div class="page2">
+    <div class="page2" id="page2">
         <h5>What kind of exercise do you want?</h5>
         <div class="carousel_area" style="max-width: 1520px; margin-left: auto; margin-right: auto; padding-top: 3%;">
             <div class="owl-carousel owl-theme">
@@ -107,7 +107,7 @@
     </div>
     <div class="footer_top">
         <h3>Ready to try a Weight Training workout?</h3>
-        <div class="getBtn"><button type="button">Get Started Today</button></div>
+        <div class="getBtn"><button type="button" id="locationBtn"><a href="#page2">Get Started Today</a></button></div>
     </div>
     <div class="footer">
         <div class="footer_logo">
@@ -132,7 +132,9 @@
     <!-- <script src="script/background.js"></script> -->
     <script src="script/weather.js"></script>
     <script src="script/stopWatch.js"></script>
+    <script src="index.js"></script>
     <script>
+
         //scroll 감지 header
             let didscroll;
             let lastScrollTop = 0;
