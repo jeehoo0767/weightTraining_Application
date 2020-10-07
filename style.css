@@ -551,3 +551,9 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   }
 
 }
+
+@media screen and (max-width: 400px) {
+  .owl-item, .active, .item{
+    margin: 0;
+  }
+}
