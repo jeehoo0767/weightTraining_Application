@@ -1,6 +1,13 @@
 *{
   font-family: 'Noto Sans KR', sans-serif;
   text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+
+ul{
+  padding: 0;
 }
 /*font-family: 'Noto Sans KR', sans-serif;*/
 /*font-family: 'Open Sans', sans-serif;*/
@@ -84,8 +91,12 @@ font-weight: bold;
 }
 
 .main_content_box h1{
-  width: 85%;
+  width: 75%;
   margin: 0 auto;
+  font-weight: bold;
+  padding-left: 20px;
+  border-left : 4px solid #212432;
+  margin-bottom: 20px;
 }
 
 .flex_box{
@@ -96,13 +107,41 @@ font-weight: bold;
   display:flex;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 
                     0 2px 10px 0 rgba(0,0,0,0.12);
+                    margin-bottom: 20px;
   /* flex-direction: column;
   justify-content: center;
   align-items: center; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.add_box{
+  display:flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  height: 40%;
+}
+
+.add_item{
+  width: 25%;
+  color:#a7aabb;
+  height: 102px;
+  line-height: 16px;
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #4e5262;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add_item:nth-child(2), .add_item:nth-child(3){
+  cursor: pointer;
 }
 
 iframe{
-  width: 60%;
+  width: 50%;
   height: 100%;
 }
   
@@ -111,10 +150,30 @@ iframe{
 } */
 
 .text_box{
-  width: 40%;
+  width: 50%;
+  /* width: 570px; */
+  font-family: 'Noto Sans KR', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
   background: #222533;
-  color:white
+  /* padding: 20px; */
+  color:white;
+  line-height: 30px;
 }
+
+.text_box a{
+  text-decoration : underline;
+  color : #3b96cb;
+}
+
+.text_content
+{
+  height: 60%;
+  padding: 20px;
+  line-height: 35px;
+  font-size: 20px;
+}
+
 /*main_container finish*/
 .footer{
   height: 200px;
@@ -138,7 +197,7 @@ iframe{
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 900px) {
 
   .main_content_box{
     padding-top: 120px;
@@ -156,11 +215,14 @@ iframe{
     width: 75%;
     margin: 0 auto;
     /* padding: 20px; */
-    height: 550px;
+    /* height: 550px; */
+    height: auto;
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   iframe{
@@ -176,8 +238,49 @@ iframe{
     width: 100%;
     background: #222533;
     color:white;
-    height: 400px;
+  }
+
+  .add_box{
+    height: 30%;
+  }
+
+  .text_content{
+    height: 70%;
+    font-size: 15px;
   }
   
+}
+
+@media screen and (max-width: 600px) {
+
+  h1{
+    font-size: 25px;
+  }
+
+  .flex_box{
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .text_content{
+    font-size: 14px;
+  }
+
+  .add_box{
+    height: 20%;
+    font-size: 13px;
+  }
+
+  .text_content{
+    height: 80%;
+    font-size: 15px;
+  }
+
+  .js-weather{
+    font-size: 12px;
+    top: 35px;
+    right: 12px;
+  }
+
   
 }
