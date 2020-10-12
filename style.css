@@ -146,18 +146,22 @@ button{
 }
 
 .js-form input {
+  font-family: 'Open Sans', sans-serif;
   padding: 10px;
   background: none;
-  font-weight: bold;
-  border: 1px solid #be3159;
-  color:#be3159;
+  /* font-weight: bold; */
+  /* border: 3px solid #ffffff; */
+  background: #313444;
+  color:#ffffff;
   font-size: 20px;
   outline: none;
+  border:none;
 }
 
 .js-form input::placeholder {
-  color:#be3159;
-  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  color:#ffffff;
+  /* font-weight: bold; */
 }
 
 .js-toDoForm{
@@ -169,16 +173,16 @@ button{
   margin-top: 20px;
   padding: 10px;
   background: none;
-  border: 1px solid #be3159;
+  border: 3px solid #4296cb;
   font-weight: bold;
-  color:#be3159;
+  color:#2c2e3a;
   font-size: 20px;
   outline: none;
   text-align: center;
 }
 
 .js-toDoForm input::placeholder {
-  color:#be3159;
+  color:#2c2e3a;
 }
 
 .form,
@@ -213,34 +217,41 @@ button{
 .wrapper button{
   width: 100px;
   height: 50px;
-  background: rgba(255, 86, 86);
+  background: #4296cb;
   border:none;
   color:white;
   border-radius: 5px;
 }
 
-ul {
+ul.js-toDoList, ul.done {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 50%;
   margin: 20px 20px;
   padding: 0;
   list-style: none;
-  width: 500px;
+  /* width: 500px; */
   height: 500px;
-  border: 3px solid #be3159;
-  border-radius: 10px;
+  border: 3px solid #4296cb;
+  /* border-radius: 10px; */
   text-align: center;
+  /* background: #4296cb; */
+  color:#2c2e3a;
 }
 
 ul li {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 16px;
-  background:rgba(150,150,150,0.5);
-  border-left: 5px solid #be3159;
+  /* background:rgba(150,150,150,0.5);
+  border-left: 5px solid #be3159; */
   border-radius: 5px;
   width: 200px;
   margin: 5px auto;
-  color:white;
+  color:#212432;
+  font-weight: bold;
 }
 
 .js-weather {
@@ -403,21 +414,25 @@ ul li {
   font-family: 'Open Sans', sans-serif;
   font-weight: bold;
   height: 200px;
-  background: #00c6ff;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #0072ff, #00c6ff);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #0072ff, #00c6ff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-image: -webkit-linear-gradient(315deg,#2eb7ce,#4296cb);
+    background-image: -o-linear-gradient(315deg,#2eb7ce 0,#4296cb 100%);
+    background-image: linear-gradient(-225deg,#2eb7ce,#4296cb);
   display:flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .footer_top h3{
   margin: 0;
-  font-weight: bold;
+  /* font-weight: bold; */
   padding: 35px;
+  font-size: 30px;
+  color:#ffffff;
 }
 
 .getBtn button{
+  width: 250px;
   padding: 18px 38px;
   background : #212432;
   border-color:transparent;
@@ -469,6 +484,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   width: 40px;
   height: 40px;
 }
+
 @media screen and (max-width: 600px) {
   .js-form input {
     margin-top: 20px;
@@ -546,6 +562,23 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     margin: 0 auto;
   }
 
+
+  .todo_flex_box{
+    display:flex;
+    flex-wrap: wrap;
+  }
+  
+  ul.js-toDoList, ul.done{
+    width: 100%;
+  }
+  
+  ul li{
+    width: 100%;
+  }
+
+  .footer_top{
+    height: 300px;
+  }
 }
 
 @media screen and (max-width: 400px) {
