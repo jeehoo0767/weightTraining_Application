@@ -121,13 +121,13 @@
         </div>
     </div>
     <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ef1830418f26ebabb16dc5067fb2fd28&libraries=services"></script>
+    <script src="../script/weather.js"></script>
     <script>
     // 마커를 담을 배열입니다
     var markers = [];
-    
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = {
-            center: new kakao.maps.LatLng(37.566826, 126.9786567), // 지도의 중심좌표
+            center: new kakao.maps.LatLng(JSON.parse(localStorage.getItem('coords')).latitude, JSON.parse(localStorage.getItem('coords')).longitude), // 지도의 중심좌표
             level: 3 // 지도의 확대 레벨
         };  
     

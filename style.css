@@ -1,5 +1,6 @@
 *{
   font-family: 'Noto Sans KR', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
   text-decoration: none;
 }
 
@@ -33,8 +34,32 @@ button{
   position: fixed;
   z-index: 12490;
   transition: top 0.2s ease-in-out;
-  display:flex;
+  /* display:flex;
+  justify-content: center;
+  align-items: center;  */
   border-bottom: 1px solid #e7edef;
+}
+
+.header_flex_box{
+  width: 63.5%;
+  margin: 0 auto;
+  display:flex;
+  align-items: center;
+  /* justify-content: space-between; */
+}
+
+.gnb{
+  /* font-family: 'Noto Sans KR', sans-serif; */
+  width: 40%;
+  display:flex;
+}
+
+.gnb div{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 15px;
+  font-weight: 900;
+  color:#333333;
+  font-size: 20px;
 }
 
 .nav-up {
@@ -54,10 +79,11 @@ button{
 }
 
 .logo{
-  width: 1200px;
-  margin: 0 auto;
+  width: 60%;
+  /* margin: 0 auto; */
   display:flex;
   align-items: center;
+  /* margin-right: 50px; */
 }
 
 .logo span{
@@ -260,6 +286,8 @@ ul li {
   top: 20px;
   right: 20px;
   font-size: 16px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
   color:#909092;
 }
 
