@@ -51,11 +51,11 @@ button{
   justify-content: space-between;
 }
 
-
 .gnb{
   /* font-family: 'Noto Sans KR', sans-serif; */
   /* width: 40%; */
   display:flex;
+  /* display: inline-block; */
 }
 
 .gnb div{
@@ -64,6 +64,10 @@ button{
   font-weight: 900;
   color:#333333;
   font-size: 20px;
+}
+
+.gnb div>a{
+  color:inherit;
 }
 
 
@@ -88,20 +92,16 @@ button{
   /* margin-right: 50px; */
 }
 
-
-
-.logo span{
-display: inline-block;
-font-size: 30px;
-color:#333333;
-margin-left: 10px;
-font-family: 'Open Sans', sans-serif;
-/* font-family: Georgia, Serif; */
-font-weight: bold;
+.logo div a span{
+  display: inline-block;
+  font-size: 30px;
+  color:#333333;
+  margin-left: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 
-
-.logo img{
+.logo div a img{
   width: 50px;
   height: 50px;
 }
