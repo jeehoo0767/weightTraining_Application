@@ -28,20 +28,19 @@ button{
 
 .header{
   width: 100%;
-  font-family: 'Open Sans', sans-serif;
   padding: 20px;
+  font-family: 'Open Sans', sans-serif;
   background: rgb(255,255,255);
-  position: fixed;
+  font-weight: bold;
+  position: sticky;
   z-index: 12490;
   transition: top 0.2s ease-in-out;
-  /* display:flex;
-  justify-content: center;
-  align-items: center;  */
+  display:flex;
   border-bottom: 1px solid #e7edef;
 }
 
 .header_flex_box{
-  width: 63.5%;
+  width: 1219px;
   margin: 0 auto;
   display:flex;
   align-items: center;
@@ -56,11 +55,17 @@ button{
 
 .gnb div{
   font-family: 'Noto Sans KR', sans-serif;
-  margin: 0 15px;
+  margin: 0 10px;
   font-weight: 900;
   color:#333333;
   font-size: 20px;
 }
+
+/* .gnb div>a{
+  text-align: center;
+  width: 80px;
+  display: block;
+} */
 
 .nav-up {
   top : -90px;
