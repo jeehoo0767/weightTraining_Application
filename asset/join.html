@@ -1,27 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="subStyle/join.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <title>Document</title>
 </head>
+
 <body>
     <div class="header">
         <div class="header_flex_box">
-        <div class="logo">
-            <div><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div>
-            <div><a href="../index.html"><span>ATHLETES</span></a></div>
+            <div class="logo">
+                <div><a href="../index.html"><img src="../images/logo.png" alt="logo"></a></div>
+                <div><a href="../index.html"><span>ATHLETES</span></a></div>
+            </div>
+            <div class="gnb">
+                <div><a href="search.html">소개</a></div>
+                <div><a href="search.html">주변장소</a></div>
+                <div><a href="join.html">회원가입</a></div>
+                <div><a href="search.html">문의사항</a></div>
+            </div>
         </div>
-        <div class="gnb">
-            <div><a href="search.html">소개</a></div>
-            <div><a href="search.html">주변장소</a></div>
-            <div><a href="join.html">회원가입</a></div>
-            <div><a href="search.html">문의사항</a></div>
-        </div>
-    </div>
         <span class="js-weather"></span>
     </div>
     <main>
@@ -32,11 +35,18 @@
             <h1 class="join_hello_big">Create Your account</h1>
             <form action="" class="join_Form">
                 <div class="input_top_text">이름</div>
-                <input type="text">
+                <input type="text" class="form_Input">
+                <div class="name_error error hide">Username can't be blank
+                </div>
                 <div class="input_top_text">이메일</div>
-                <input type="text">
+                <input type="text" class="form_Input">
+                <div class="email_error error hide">Email can't be blank</div>
                 <div class="input_top_text">비밀번호</div>
-                <input type="text">
+                <input type="text" class="form_Input">
+                <div class="password_error error hide">Email can't be blank</div>
+                <div class="form_button_area">
+                    <button type="submit" class="form_button">Sign Up</button>
+                </div>
             </form>
         </div>
     </main>
@@ -57,5 +67,84 @@
             <img src="../images/twitter.png" alt="twitter">
         </div>
     </div>
+    <script>
+        //scroll 감지 header
+        let didscroll;
+        let lastScrollTop = 0;
+        let delta = 5;
+        let navbarHeight = $(".header").outerHeight();
+
+        $(window).scroll(function (evnet) {
+            didscroll = true;
+        });
+
+        setInterval(function () {
+            if (didscroll) {
+                hasScrolled();
+                didscroll = false;
+            }
+        }, 250);
+
+        function hasScrolled() {
+            let st = $(this).scrollTop();
+
+            if (Math.abs(lastScrollTop - st) <= delta)
+                return;
+
+            if (st > lastScrollTop && st > navbarHeight) {
+                $(".header").removeClass("nav-down").addClass("nav-up");
+            } else {
+                if (st + $(window).height() < $(document).height()) {
+                    $(".header").removeClass("nav-up").addClass("nav-down");
+                }
+            }
+            lastScrollTop = st;
+        }
+        //scroll 감지 header 끝
+
+        //회----원가-------입//
+        const form = document.querySelector(".join_Form");
+        const formInput = document.querySelectorAll(".form_Input");
+        const formBtn = document.querySelector(".form_button");
+
+        function checkForm(event) {
+            event.preventDefault();
+            let inputCountValue = 0;
+            if(formInput[0].value == ""){
+                $(".name_error").removeClass("hide");
+            }
+            else{
+                $(".name_error").addClass("hide");
+            }
+
+            if(formInput[1].value == ""){
+                $(".email_error").removeClass("hide");
+            }
+            else{
+                $(".email_error").addClass("hide");
+            }
+            
+            if(formInput[2].value == ""){
+                $(".password_error").removeClass("hide");
+            }
+            else{
+                $(".password_error").addClass("hide");
+            }
+
+            formInput.forEach(input => {
+                if(input.value != "") inputCountValue++;
+            });
+
+            if(inputCountValue == 3){
+                form.submit();
+            }
+        }
+
+        function init() {
+            form.addEventListener("submit", checkForm);
+        }
+        init();
+    </script>
 </body>
+
 </html>
