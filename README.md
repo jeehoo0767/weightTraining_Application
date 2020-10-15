@@ -8,7 +8,7 @@
 
 ### npm start
 
-# "scripts": {
+### "scripts": {
     "start": "npm run lite",
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
