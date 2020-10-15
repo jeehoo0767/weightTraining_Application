@@ -32,6 +32,12 @@
             <div><a href="asset/join.html">회원가입</a></div>
             <div><a href="asset/search.html">문의사항</a></div>
         </div>
+        <div class="gnb_toggle fadeout">
+            <div><a href="asset/search.html">소 개</a></div>
+            <div><a href="asset/search.html">주변장소</a></div>
+            <div><a href="asset/join.html">회원가입</a></div>
+            <div><a href="asset/search.html">문의사항</a></div>
+        </div>
     </div>
     <div class="menu_container">
         <div id="line-top" class="bar-top-reverse bar"></div>
@@ -193,39 +199,39 @@
     <script src="script/stopWatch.js"></script>
     <script src="index.js"></script>
     <script>
-        //scroll 감지 header
-        let didscroll;
-        let lastScrollTop = 0;
-        let delta = 5;
-        let navbarHeight = $(".header").outerHeight();
+        // //scroll 감지 header
+        // let didscroll;
+        // let lastScrollTop = 0;
+        // let delta = 5;
+        // let navbarHeight = $(".header").outerHeight();
 
-        $(window).scroll(function (evnet) {
-            didscroll = true;
-        });
+        // $(window).scroll(function (evnet) {
+        //     didscroll = true;
+        // });
 
-        setInterval(function () {
-            if (didscroll) {
-                hasScrolled();
-                didscroll = false;
-            }
-        }, 250);
+        // setInterval(function () {
+        //     if (didscroll) {
+        //         hasScrolled();
+        //         didscroll = false;
+        //     }
+        // }, 250);
 
-        function hasScrolled() {
-            let st = $(this).scrollTop();
+        // function hasScrolled() {
+        //     let st = $(this).scrollTop();
 
-            if (Math.abs(lastScrollTop - st) <= delta)
-                return;
+        //     if (Math.abs(lastScrollTop - st) <= delta)
+        //         return;
 
-            if (st > lastScrollTop && st > navbarHeight) {
-                $(".header").removeClass("nav-down").addClass("nav-up");
-            } else {
-                if (st + $(window).height() < $(document).height()) {
-                    $(".header").removeClass("nav-up").addClass("nav-down");
-                }
-            }
-            lastScrollTop = st;
-        }
-        //scroll 감지 header 끝
+        //     if (st > lastScrollTop && st > navbarHeight) {
+        //         $(".header").removeClass("nav-down").addClass("nav-up");
+        //     } else {
+        //         if (st + $(window).height() < $(document).height()) {
+        //             $(".header").removeClass("nav-up").addClass("nav-down");
+        //         }
+        //     }
+        //     lastScrollTop = st;
+        // }
+        // //scroll 감지 header 끝
 
         $('.owl-carousel').owlCarousel({
             // loop: true,
@@ -271,6 +277,7 @@
             $("#line-top").toggleClass("bar-top").toggleClass("bar-top-reverse");
             $("#line-middle").toggleClass("bar-middle").toggleClass("bar-middle-reverse");
             $("#line-bottom").toggleClass("bar-bottom").toggleClass("bar-bottom-reverse");
+            $(".gnb_toggle").toggleClass("fadeout");
         });
     </script>
 </body>

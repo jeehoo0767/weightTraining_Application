@@ -16,6 +16,14 @@
   display:none;
 }
 
+.fadein{
+  opacity: 1;
+}
+
+.fadeout{
+  opacity: 0;
+}
+
 body {
   margin: 0;
   color:#333333;
@@ -47,6 +55,7 @@ button{
 
 .bar-top{
   transform: rotateZ(-45deg) translateY(13px);
+  background: #ffffff;
 }
 
 .bar-top-reverse{
@@ -63,6 +72,7 @@ button{
 }
 
 .bar-bottom{
+  background: #ffffff;
   transform: rotateZ(45deg) translateY(-13px);
 }
 
@@ -77,7 +87,7 @@ button{
   font-family: 'Open Sans', sans-serif;
   background: rgb(255,255,255);
   font-weight: bold;
-  position: sticky;
+  position: fixed;
   z-index: 12490;
   transition: top 0.2s ease-in-out;
   display:flex;
@@ -97,6 +107,23 @@ button{
   /* width: 40%; */
   display:flex;
   /* display: inline-block; */
+}
+
+.gnb_toggle{
+  padding: 50px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  transition: all 0.2s ease-in-out;
+  background: #222533;
+}
+
+.gnb_toggle div{
+  font-family: 'Noto Sans KR', sans-serif;
+  margin: 0 10px;
+  font-weight: 900;
+  color:#ffffff;
+  font-size: 20px;
 }
 
 .gnb div{
@@ -171,7 +198,6 @@ button{
 }
 
 .main_img img{
-  width: 80%;
   height: 500px;
   position: relative;
   top: 20px;
@@ -573,6 +599,12 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   height: 40px;
 }
 
+@media screen and (min-width: 901px){
+  .gnb_toggle{
+    opacity: 0;
+  }
+}
+
 @media screen and (max-width: 900px) {
     .gnb{
       display:none;
@@ -650,6 +682,8 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   
   .main_img img{
     top: 0;
+    width: 80%;
+
   }
 
   .iframe_area{
