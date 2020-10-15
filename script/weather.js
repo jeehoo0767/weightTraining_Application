@@ -39,7 +39,7 @@ function handleGeoError(){
 
 function askForCoords(){
     navigator.geolocation.getCurrentPosition(handleGeoSucces, handleGeoError);
-    //
+    //사용자의 위치정보를 요청하는 API
 }
 
 function loadCoords(){
