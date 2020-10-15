@@ -27,7 +27,7 @@ function plusDone(event, text) {
         return toDo.id !== parseInt(delLi.id);
     });
     toDos = cleanToDos;
-    doneBtn.innerText = "DONE";
+    doneBtn.innerText = "✔";
     span.innerText = text;
     li.appendChild(doneBtn);
     doneBtn.classList.add("done_btn");
