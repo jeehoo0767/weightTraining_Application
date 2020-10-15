@@ -25,7 +25,7 @@ button{
   cursor: pointer;
 }
 
-qwrq/*메뉴버튼튼튼튼*/
+/*메뉴버튼튼튼튼*/
 .menu_container{
   cursor: pointer;
   display:none;
@@ -122,11 +122,11 @@ qwrq/*메뉴버튼튼튼튼*/
 }
 
 .big_font{
-  font-size: 1rem;
+  font-size: 2rem;
 }
 
 .small_font{
-  font-size: 0.8rem;
+  font-size: 1.5rem;
 }
 
 .logo{
@@ -157,7 +157,7 @@ qwrq/*메뉴버튼튼튼튼*/
   padding: 20px 20px 20px 20px;
   margin: 0 auto;
   display:flex;
-  flex-wrap: wrap-reverse;
+  /* flex-wrap: wrap-reverse; */
   justify-content: center;
   align-items: center;
   position: relative;
@@ -171,6 +171,7 @@ qwrq/*메뉴버튼튼튼튼*/
 }
 
 .main_img img{
+  width: 80%;
   height: 500px;
   position: relative;
   top: 20px;
@@ -587,30 +588,30 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     margin-top: 20px;
     padding: 10px;
     background: none;
-    border: 1px solid #be3159;
-    color:#be3159;
+    /* border: 1px solid #be3159; */
+    /* color:#be3159; */
     font-size: 20px;
     outline: none;
     text-align: center;
   }
 
   .js-form input::placeholder {
-    color:#be3159;
+    /* color:#be3159; */
   }
 
   .js-toDoForm input {
     margin-top: 20px;
   padding: 10px;
   background: none;
-  border: 1px solid #be3159;
-  color:#be3159;
+  /* border: 1px solid #be3159; */
+  /* color:#be3159; */
   font-size: 20px;
   outline: none;
   text-align: center;
   }
 
   .js-toDoForm input::placeholder {
-    color:#be3159;
+    /* color:#be3159; */
   }
 
   .item{
@@ -619,7 +620,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 
   .form,
 .greetings {
-  width: 400px;
+  width: 100%;
   /* height: 260px; */
   /* margin: 20px; */
   font-size: 25px;
@@ -641,6 +642,7 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
     width: 100%;
     margin: 0 auto;
     /* margin-top: 50px; */
+      flex-wrap: wrap-reverse;
     padding: 0;
     position: relative;
     /* margin-bottom: 30px; */
