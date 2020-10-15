@@ -25,6 +25,52 @@ button{
   cursor: pointer;
 }
 
+qwrq/*메뉴버튼튼튼튼*/
+.menu_container{
+  cursor: pointer;
+  display:none;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  right: 20px;
+}
+
+.bar {
+  width: 40px;
+  height: 5px;
+  background: #313444;
+  border-radius: 4px;
+  margin: 4px 0;
+  cursor: pointer;
+  transition : all 0.3s ease-in-out;
+}
+
+.bar-top{
+  transform: rotateZ(-45deg) translateY(13px);
+}
+
+.bar-top-reverse{
+  transform: rotateZ(0deg) translateY(0px);
+
+}
+
+.bar-middle{
+  opacity: 0;
+}
+
+.bar-middle-reverse{
+  opacity: 1;
+}
+
+.bar-bottom{
+  transform: rotateZ(45deg) translateY(-13px);
+}
+
+.bar-bottom-reverse{
+  transform: rotateZ(0deg) translateY(0px);
+}
+/*메뉴버튼끝끅ㅌ끝끝*/
+
 .header{
   width: 100%;
   padding: 20px;
@@ -76,11 +122,11 @@ button{
 }
 
 .big_font{
-  font-size: 33px;
+  font-size: 1rem;
 }
 
 .small_font{
-  font-size: 20px;
+  font-size: 0.8rem;
 }
 
 .logo{
@@ -111,7 +157,7 @@ button{
   padding: 20px 20px 20px 20px;
   margin: 0 auto;
   display:flex;
-  /* flex-wrap: wrap-reverse; */
+  flex-wrap: wrap-reverse;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -138,6 +184,7 @@ button{
   z-index: 99;
 }
 
+
 .flex_box{
   margin-top: 30px;
 }
@@ -154,6 +201,7 @@ button{
 #eng_btn{
   width: 250px;
   font-family: 'Open Sans', sans-serif;
+  border-radius: 3px;
   font-weight: bold;
   padding: 10px;
   margin: 0 auto;
@@ -163,7 +211,7 @@ button{
   background: #313444;
   color:white;
   cursor: pointer;
-  margin-top: 20px;
+  /* margin-top: 20px; */
 }
 
 .js-clock h1 {
@@ -187,6 +235,7 @@ button{
   font-size: 20px;
   outline: none;
   border:none;
+  border-radius: 5px;
 }
 
 .js-form input::placeholder {
@@ -210,6 +259,7 @@ button{
   font-size: 20px;
   outline: none;
   text-align: center;
+  border-radius: 5px;
 }
 
 .js-toDoForm input::placeholder {
@@ -219,7 +269,7 @@ button{
 .form,
 .greetings {
   width: 580px;
-  height: 220px;
+  /* height: 220px; */
   font-family: 'Open Sans', sans-serif;
   display: none;
   margin: 60px;
@@ -267,6 +317,9 @@ ul.js-toDoList, ul.done {
   text-align: center;
   /* background: #4296cb; */
   color:#2c2e3a;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 
+  0 2px 10px 0 rgba(0,0,0,0.12);
+  border-radius: 5px;
 }
 
 ul li {
@@ -288,7 +341,8 @@ ul li {
 .js-weather {
   font-size: 30px;
   position: absolute;
-  top: 20px;
+  top: 50%;
+  transform:translateX(-50%);
   right: 20px;
   font-size: 16px;
   font-weight: bold;
@@ -518,6 +572,16 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   height: 40px;
 }
 
+@media screen and (max-width: 900px) {
+    .gnb{
+      display:none;
+    }
+
+    .menu_container{
+      display:inline-block;
+    }
+}
+
 @media screen and (max-width: 600px) {
   .js-form input {
     margin-top: 20px;
@@ -556,24 +620,36 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
   .form,
 .greetings {
   width: 400px;
-  height: 260px;
-  margin: 20px;
+  /* height: 260px; */
+  /* margin: 20px; */
   font-size: 25px;
+  margin: 0 auto;
+}
+
+#eng_btn{
+  margin-bottom: 50px;
+}
+
+.greeting_Area{
+  width: 100%;
+  background: #222533;
+  /* text-align: center; */
 }
 
   .video{
     text-align: center;
     width: 100%;
     margin: 0 auto;
-    margin-top: 50px;
+    /* margin-top: 50px; */
+    padding: 0;
     position: relative;
-    margin-bottom: 30px;
-    display:flex;
-    flex-wrap: wrap-reverse;
-    justify-content: center;
-    align-items: center;
+    /* margin-bottom: 30px; */
   }
   
+  .main_img img{
+    top: 0;
+  }
+
   .iframe_area{
     text-align: center;
   }

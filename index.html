@@ -33,6 +33,11 @@
             <div><a href="asset/search.html">문의사항</a></div>
         </div>
     </div>
+    <div class="menu_container">
+        <div id="line-top" class="bar-top-reverse bar"></div>
+        <div id="line-middle" class="bar-middle-reverse bar"></div>
+        <div id="line-bottom" class="bar-bottom-reverse bar"></div>
+    </div>
         <!-- <span class="js-weather"></span> -->
     </div>
     <!-- <div class="js-clock">
@@ -260,6 +265,12 @@
                 "opacity": "1",
                 "transition": "0.1s all ease-in-out"
             });
+        });
+
+        $(".menu_container").click(function () {
+            $("#line-top").toggleClass("bar-top").toggleClass("bar-top-reverse");
+            $("#line-middle").toggleClass("bar-middle").toggleClass("bar-middle-reverse");
+            $("#line-bottom").toggleClass("bar-bottom").toggleClass("bar-bottom-reverse");
         });
     </script>
 </body>
