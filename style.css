@@ -87,7 +87,8 @@ button{
   font-family: 'Open Sans', sans-serif;
   background: rgb(255,255,255);
   font-weight: bold;
-  position: fixed;
+  position: sticky;
+  top: 0;
   z-index: 12490;
   transition: top 0.2s ease-in-out;
   display:flex;
