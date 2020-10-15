@@ -18,6 +18,14 @@
   .hide{
     display:none;
   }
+
+  .fadein {
+    display:block;
+  }
+  
+  .fadeout {
+    display:none;
+  }
   
   body {
     margin: 0;
@@ -30,6 +38,55 @@
     cursor: pointer;
   }
   
+/*메뉴버튼튼튼튼*/
+.menu_container {
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+}
+
+.bar {
+  width: 40px;
+  height: 5px;
+  background: #313444;
+  border-radius: 4px;
+  margin: 4px 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.bar-top {
+  transform: rotateZ(-45deg) translateY(13px);
+  background: #ffffff;
+}
+
+.bar-top-reverse {
+  transform: rotateZ(0deg) translateY(0px);
+
+}
+
+.bar-middle {
+  opacity: 0;
+}
+
+.bar-middle-reverse {
+  opacity: 1;
+}
+
+.bar-bottom {
+  background: #ffffff;
+  transform: rotateZ(45deg) translateY(-13px);
+}
+
+.bar-bottom-reverse {
+  transform: rotateZ(0deg) translateY(0px);
+}
+
+/*메뉴버튼끝끅ㅌ끝끝*/
+
   .header{
     width: 100%;
     padding: 20px;
@@ -37,6 +94,7 @@
     background: rgb(255,255,255);
     font-weight: bold;
     position: sticky;
+    top: 0;
     z-index: 12490;
     transition: top 0.2s ease-in-out;
     display:flex;
@@ -51,18 +109,41 @@
     justify-content: space-between;
   }
   
-  .gnb{
+  .gnb {
     /* font-family: 'Noto Sans KR', sans-serif; */
     /* width: 40%; */
-    display:flex;
+    display: flex;
     /* display: inline-block; */
   }
   
-  .gnb div{
+  .gnb_toggle {
+    width: 100%;
+    padding: 40px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    /* transition: all 0.2s ease-in-out; */
+    background: #222533;
+    text-align: center;
+  }
+  
+  .gnb_toggle div {
+    font-family: 'Noto Sans KR', sans-serif;
+    margin: 10px 10px;
+    font-weight: 900;
+    color: #ffffff;
+    font-size: 20px;
+  }
+
+  .gnb_toggle div a{
+    color: #ffffff;
+  }
+  
+  .gnb div {
     font-family: 'Noto Sans KR', sans-serif;
     margin: 0 10px;
     font-weight: 900;
-    color:#333333;
+    color: #333333;
     font-size: 20px;
   }
   
@@ -267,11 +348,25 @@
     display:none;
   }
 
+  @media screen and (min-width: 901px) {
+    .gnb_toggle {
+      opacity: 0;
+    }
+  }
+  
+
   @media screen and (max-width: 900px) {
     .join_Form{
       width: 80%;
     }
 
+    .gnb {
+      display: none;
+    }
+  
+    .menu_container {
+      display: inline-block;
+    }
 
   }
 
