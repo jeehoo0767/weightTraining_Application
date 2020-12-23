@@ -13,3 +13,14 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lite": "lite-server"
   }
+  
+## Skills
+- HTML5
+- CSS3
+- SCSS
+- javascript
+- jQuery
+
+
+## Library
+- [owlcarousel2.js](https://owlcarousel2.github.io/OwlCarousel2/)
